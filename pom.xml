@@ -99,13 +99,13 @@
 	    <repository>
 	      <id>nexus</id>
 	      <name>admin</name>
-	      <url>http://3.21.52.16:8081/repository/Pipeline-Snapshot/</url>
+	      <url>http://3.21.52.16:8081/repository/Pipeline-Release/</url>
 	    </repository>
 	    
 	    <snapshotRepository>
 	      <id>nexus</id>
 	      <name>admin</name>
-	      <url>http://3.21.52.16:8081/repository/Pipeline-Release/</url>
+	      <url>http://3.21.52.16:8081/repository/Pipeline-Snapshot/</url>
 	    </snapshotRepository>
 	    
 	</distributionManagement>
