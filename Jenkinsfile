@@ -1,6 +1,7 @@
 node
 {
     def mavenHome = tool name: "3.6.3"
+    properties([buildDiscarder(logRotator(artifactDaysToKeepStr: '5', artifactNumToKeepStr: '5', daysToKeepStr: '5', numToKeepStr: '5')), pipelineTriggers([pollSCM('* * * * *')])])
  stage('CheckoutCode')
  {
  git branch: 'development', credentialsId: '09f4816d-1171-4cda-ae3c-758fc790f92f', url: 'https://github.com/tcs-ec-apps/maven-web-application.git'
